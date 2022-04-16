@@ -1,0 +1,30 @@
+{
+	"name": "cent-logger",
+	"version": "1.0.0",
+	"description": "This library enables logging and monitoring ",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "rimraf build && tsc",
+		"start": "node build/index.js",
+		"prestart": "npm run build"
+	},
+	"author": "Shubham Seth",
+	"type": "module",
+	"license": "ISC",
+	"dependencies": {
+		"@types/node": "^17.0.23",
+		"axios": "^0.26.1",
+		"colors": "^1.4.0",
+		"firebase": "^9.6.10",
+		"fs-extra-promise": "^1.0.1",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.2",
+		"node-emoji": "^1.11.0",
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.7.0",
+		"winston": "^3.7.2"
+	},
+	"devDependencies": {
+		"typescript": "^4.6.3"
+	}
+}
